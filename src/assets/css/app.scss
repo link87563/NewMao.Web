@@ -1,0 +1,11 @@
+// Common
+@import 'variable';  // 放變數
+@import 'mixin';    // mixin
+@import 'reset';    // reset網頁用的css
+@import 'extend';   // 合併css用，裡面都是使用%符號
+@import 'layout';   //共同框架
+
+
+// Third-party
+@import "~bootstrap/scss/bootstrap";
+@import "customBootstrap";

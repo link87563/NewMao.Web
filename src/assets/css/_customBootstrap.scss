@@ -1,0 +1,10 @@
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/_mixins.scss';
+
+$body-bg: $gray-dark;
+$body-color: $gray-light;
+
+body {
+  background: $gray-dark ;
+  color: $gray-light;
+}

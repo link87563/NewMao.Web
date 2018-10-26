@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -18,6 +19,19 @@ const createLintingRule = () => ({
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
 })
+
+module.exports = {
+  entry: {},
+  output: {},
+  resolve: {},
+  module: {},
+  plugins: [new webpack.ProvidePlugin({
+    jQuery: 'jquery',
+    $: 'jquery',
+    'window.jQuery': 'jquery',
+    Tether: 'tether'
+  })]
+}
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
