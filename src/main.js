@@ -11,6 +11,7 @@ import 'bootstrap'
 // app style
 import './assets/css/app.scss'
 
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -56,23 +56,54 @@
         </li>
       </ul>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>幣別</th>
+              <th>說明</th>
+              <th>總額</th>
+              <th>換算</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in dataList">
+              <td>{{ item.code }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.rate }}</td>
+              <td>{{ item.rate_float }}</td>  
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </template>
 
-
-
 <script>
+import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      dataList: {}
     }
   },
   methods: {
-    btnAlart(){
-      alert('XXX')
+    btnAlart () {
+      alert('XXX'); 
     }
+  },
+  mounted: function() {
+    axios
+    .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+    .then(response => {
+      console.log(response);
+      this.dataList = response.data.bpi;
+    })
   }
 }
 </script>
