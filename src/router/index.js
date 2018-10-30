@@ -1,21 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+import Login from '@/components/Login'
+import Layout from '@/components/Layout'
+import Unauthrized from '@/components/Unauthrized'
+
 import HelloWorld from '@/components/HelloWorld'
-import layout from '@/components/layout'
+import Common from './common'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/login',
+      name: 'Login',
+      component: Login
     },
+    // {
+    //   path: '/',
+    //   name: 'HelloWorld',
+    //   component: HelloWorld
+    // },
     {
       path: '/',
-      name: 'layout',
-      component: layout
+      name: 'Layout',
+      component: Layout,
+      child: [
+        ...Common
+      ]
+    },
+    {
+      path: '/Unauthrized',
+      name: 'Unauthrized',
+      component: Unauthrized
     }
   ]
 })
