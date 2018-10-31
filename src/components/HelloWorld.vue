@@ -68,7 +68,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in dataList">
+            <tr v-for="(item,index) in dataList" :key="index">
               <td>{{ item.code }}</td>
               <td>{{ item.description }}</td>
               <td>{{ item.rate }}</td>
