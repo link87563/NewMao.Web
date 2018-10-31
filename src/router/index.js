@@ -6,6 +6,7 @@ import Layout from '@/components/Layout'
 import Unauthrized from '@/components/Unauthrized'
 
 import HelloWorld from '@/components/HelloWorld'
+
 import Common from './common'
 
 Vue.use(Router)
@@ -17,17 +18,17 @@ export default new Router({
       name: 'Login',
       component: Login
     },
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
     {
-      path: '/',
+      path: '',
       name: 'Layout',
       component: Layout,
-      child: [
-        ...Common
+      children: [
+        // ...Common
+        {
+          path: 'HelloWorld',
+          name: 'HelloWorld',
+          component: HelloWorld
+        },
       ]
     },
     {

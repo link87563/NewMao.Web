@@ -8,7 +8,8 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							 <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+							 <!-- <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a> -->
+               <router-link class="nav-link" :to="{ path: '/HelloWorld' }">HelloWorld</router-link>
 						</li>
 						<li class="nav-item">
 							 <a class="nav-link" href="#">Link</a>
