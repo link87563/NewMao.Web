@@ -6,11 +6,13 @@ import App from './App'
 import router from './router'
 
 // bootstrap
-// import 'bootstrap/scss/bootstrap.scss'
 import 'bootstrap'
 
 // app style
 import './assets/css/app.scss'
+
+//fontawesome
+import '@fortawesome/fontawesome-free/js/all'
 
 Vue.config.productionTip = false
 

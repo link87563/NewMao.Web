@@ -4,7 +4,9 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
-				</button> <a class="navbar-brand" href="#">Brand</a>
+				</button> 
+				<!-- <a class="navbar-brand" href="#">Brand</a> -->
+				<router-link class="navbar-brand" :to="{ path: '/' }">NewMao</router-link>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
@@ -31,7 +33,8 @@
 					</form>
 					<ul class="navbar-nav ml-md-auto">
 						<li class="nav-item active">
-							 <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+							 <!-- <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a> -->
+							 <router-link class="nav-link" :to="{ path: '/Login' }"> Login<span class="sr-only">(current)</span></router-link>
 						</li>
 						<li class="nav-item dropdown">
 							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>

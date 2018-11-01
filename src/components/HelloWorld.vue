@@ -1,6 +1,6 @@
 <template>
-  <body>
-    <div class="hello">
+  <body class="newBody">
+    <div class="hello justify-content-center">
       <h1>{{ msg }}</h1>
       <h2>Essential Links</h2>
       <button class="btn btn-primary" @click="btnAlart">AAA</button>
@@ -51,6 +51,7 @@
         </li>
         <li>
           <a href="https://github.com/vuejs/awesome-vue" target="_blank">
+          <i class="fab fa-facebook-square"></i>
             awesome-vue
           </a>
         </li>

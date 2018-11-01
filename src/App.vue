@@ -14,6 +14,7 @@ export default {
 <style lang="scss">
 // @import './assets/css/_customBootstrap';
 @import '../node_modules/bootstrap/scss/bootstrap';
+// @import '../node_modules/@fortawesome/fontawesome-free/css/all';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

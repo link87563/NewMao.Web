@@ -14,10 +14,10 @@
           </div>
         </form>
         <div class="print-section">
-          <div class="print-title">
+          <!-- <div class="print-title">
             <img src="" alt="">
-          </div>
-          <h5 class="page-title"></h5>
+          </div> -->
+          <!-- <h5 class="page-title"></h5> -->
           <router-view></router-view>
         </div>
       </div>

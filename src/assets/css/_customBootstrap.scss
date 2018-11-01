@@ -2,9 +2,9 @@
 @import '~bootstrap/scss/_mixins.scss';
 
 $body-bg: $gray-dark;
-$body-color: $gray-light;
+$body-color: $gray-yellow;
 
-// body {
-//   background: $gray-dark ;
-//   color: $gray-light;
-// }
+.newBody {
+  background: $body-bg ;
+  color: $body-color;
+}

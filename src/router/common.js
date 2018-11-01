@@ -1,11 +1,9 @@
-// import HelloWorld from '@/components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld'
 
-// export default new router({
-//   routes: [
-//     {
-//       path: '/HelloWorld',
-//       name: 'HelloWorld',
-//       component: HelloWorld
-//     },
-//   ]
-// })
+export default [
+  {
+    path: '/HelloWorld',
+    name: 'HelloWorld',
+    component: HelloWorld
+  }
+]
