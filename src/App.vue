@@ -12,9 +12,8 @@ export default {
 </script>
 
 <style lang="scss">
-// @import './assets/css/_customBootstrap';
 @import '../node_modules/bootstrap/scss/bootstrap';
-// @import '../node_modules/@fortawesome/fontawesome-free/css/all';
+@import '../node_modules/swiper/dist/css/swiper.min';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

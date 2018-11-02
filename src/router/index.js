@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Layout from '@/components/Layout'
 import Unauthrized from '@/components/Unauthrized'
@@ -16,6 +17,11 @@ export default new Router({
       name: 'Layout',
       component: Layout,
       children: [
+        {
+          path: '/home',
+          name: 'Home',
+          component: Home
+        },
         {
           path: '/login',
           name: 'Login',

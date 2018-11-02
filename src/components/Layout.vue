@@ -6,10 +6,10 @@
         <form class="form fixed-page-title">
           <div class="x-title x-title-top">
             <h5>
-              <router-link ></router-link>
+              <!-- <router-link ></router-link> -->
             </h5>
             <div class="pull-right">
-              <component :is="componentId"></component>
+              <!-- <component :is="componentId"></component> -->
             </div>
           </div>
         </form>
@@ -18,6 +18,7 @@
             <img src="" alt="">
           </div> -->
           <!-- <h5 class="page-title"></h5> -->
+          
           <router-view></router-view>
         </div>
       </div>
@@ -25,7 +26,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <p class="mt-2">Copyright © All Rights Reserved 2020 | Template Design & Development by</p>
+          <p class="mt-2">Copyright © All Rights Reserved 2020 | Link</p>
         </div>
       </div>
     </footer>

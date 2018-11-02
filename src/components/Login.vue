@@ -72,7 +72,7 @@ export default {
       console.log(this.login)
     }
   },
-  mounted: {
+  mounted() {
 
   }
 }
