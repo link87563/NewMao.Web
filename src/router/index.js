@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import Unauthrized from '@/components/Unauthrized'
 
 import Common from './common'
+import Article from './article' 
 
 Vue.use(Router)
 
@@ -28,6 +29,7 @@ export default new Router({
           component: Login
         },
         ...Common,
+        ...Article,
         {
           path: '/Unauthrized',
           name: 'Unauthrized',

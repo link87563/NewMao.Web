@@ -14,7 +14,7 @@
                <router-link class="nav-link" :to="{ path: '/HelloWorld' }">HelloWorld</router-link>
 						</li>
 						<li class="nav-item">
-							 <router-link class="nav-link active" :to="{ path: '/' }">討論區</router-link>
+							 <router-link class="nav-link active" :to="{ path: '/ArticleList' }">討論區</router-link>
 						</li>
 						<li>
 							<router-link class="nav-link active" :to="{ path: '/' }">領養區</router-link>
