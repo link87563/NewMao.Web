@@ -38,6 +38,10 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+  //for ckeditor
+  externals: {
+    'CKEDITOR': 'window.CKEDITOR'
+  },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

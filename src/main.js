@@ -7,9 +7,7 @@ import Vuex, { mapMutations, mapState } from 'vuex'
 
 import store from './store'
 import { Select, Option } from 'iview'
-
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
-import VueCkeditor from 'vue-ckeditor5'
+import VueCkeditor from 'vue-ckeditor2'
 
 // bootstrap
 import 'bootstrap'
@@ -23,6 +21,7 @@ import '@fortawesome/fontawesome-free/js/all'
 Vue.config.productionTip = false
 
 Vue.use(Vuex)
+Vue.use(VueCkeditor)
 
 
 /* eslint-disable no-new */
@@ -32,11 +31,3 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-
-const options = {
-  editors: {
-    classic: ClassicEditor
-  },
-  name: 'ckeditor'
-}
-Vue.use(VueCkeditor.plugin, options)

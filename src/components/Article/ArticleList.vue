@@ -1,20 +1,40 @@
 <template>
-  <div>
+  <div class="row">
     <div class="col-12">
       <div class="card">
         <div class="card-header">
-          <router-link :to="{ path: '/Article/create' }" class="btn btn-primary float-right">新增文章</router-link>
+          <router-link :to="{ path: '/Article/create' }" 
+                      class="btn btn-primary float-right">新增文章</router-link>
         </div>
       </div>
     </div>
-    <div class="col-10">
+  
+    <div class="col-9">
       <article-table :articleList="articleList"></article-table>
     </div>
-    <div class="col-2">
-      <div>
-
+    <div class="col-3">
+      <div class="card gedf-card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <div class="card gedf-card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -79,6 +99,9 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+
   }
 }
 </script>
